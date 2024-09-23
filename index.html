@@ -3,53 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM </title>
+    <title>DOM</title>
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 <body class="bg-[#FAFDFF]">
-    <head class="mb-10">
-        <nav class="fixed w-full top-0 z-50 bg-[#F9F7F3]  py-4">
-    <div class="mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center">
-      
-        <div>
-          <a href="#" class="text-2xl bg-[#B4F461] px-6 py-3 border rounded-lg font-bold text-gray-800">Blog</a>
-        </div>
-    
-        <div class="flex">
-          <img src="assets/logo.png" alt="">
-          <p class="text-gray-800 text-xl font-bold mt-4 pl-4">Donate Bangladesh</p>
-        </div>
+    <nav class="fixed w-full top-0 z-50 bg-[#F9F7F3] py-4">
+        <div class="mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center flex-wrap">
+                <div>
+                    <a href="#" class="text-2xl bg-[#B4F461] px-4 py-2 border rounded-lg font-bold text-gray-800">Blog</a>
+                </div>
 
-        <div class="flex text-gray-800 text-xl font-bold mt-4 pl-4">
-         <img src="assets/coin.png" class="border border-dashed border-gray-400 " alt=""><span class="pl-6">5500</span>
-         <p class="pl-2">BDT</p>
+                <div class="items-center hidden md:flex">
+                    <img src="assets/logo.png" alt="" class="h-8 w-auto">
+                    <p class="text-gray-800 text-lg font-bold mt-0 pl-2">Donate Bangladesh</p>
+                </div>
+
+                <div class="flex text-gray-800 text-lg font-bold mt-4 pl-4">
+                    <img src="assets/coin.png" class="border border-dashed border-gray-400 h-6 w-6" alt="">
+                    <span class="pl-2">5500</span>
+                    <p class="pl-1">BDT</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </nav>
+    </nav>
 
-    </head>
+    <main class="pt-20">
+        <div class="hero min-h-screen">
+            <div class="hero-content flex-col lg:flex-row border border-gray-300 rounded-md p-4">
+                <img src="assets/noakhali.png" class="max-w-md rounded-lg shadow-xl mb-4 lg:mb-0 lg:mr-4 w-full h-auto" />
+                <div class="flex flex-col w-full">
+                    <button class="border rounded-md p-1 flex bg-[#1111110D] items-center mb-2">
+                        <img src="assets/coin.png" class="h-6 w-6" alt="">
+                        <span class="pl-2 text-lg">0</span>
+                        <p class="pl-1 text-lg">BDT</p>
+                    </button>
 
-    <main>
- <div class="hero bg-base-200 min-h-screen">
-  <div class="hero-content flex-col lg:flex-row">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-      class="max-w-sm rounded-lg shadow-2xl" />
-    <div>
-      <h1 class="text-5xl font-bold">Box Office News!</h1>
-      <p class="py-6">
-        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-        quasi. In deleniti eaque aut repudiandae et a id nisi.
-      </p>
-      <button class="btn btn-primary">Get Started</button>
-    </div>
-  </div>
-</div>
+                    <h1 class="text-lg font-bold text-black pt-3">Donate for Flood at Noakhali, Bangladesh</h1>
+                    <p class="py-2 text-gray-700 text-sm">
+                        The recent floods in Noakhali have caused significant damage to homes and infrastructure. Your donation will help provide essential supplies to those affected by this disaster. Every contribution, big or small, makes a difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+                    </p>
+                    <div>
+                        <input type="text" placeholder="Write Donation Amount" class="input bg-[#fff] input-bordered w-full my-4" />
+                    </div>
+                    <button class="text-lg bg-[#B4F461] px-4 py-2 border rounded-lg font-semibold text-gray-800 w-full">Donate Now</button>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
