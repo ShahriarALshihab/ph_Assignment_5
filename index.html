@@ -12,7 +12,7 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-[#FAFDFF]">
+  <body class="bg-[#FAFDFF] min-h-screen">
     <div
       class="flex items-center justify-center fixed w-full h-16 bg-[#FFFFF0] z-50 md:hidden"
     >
@@ -20,12 +20,12 @@
       <p class="text-gray-800 text-lg font-bold mt-0 pl-2">Donate Bangladesh</p>
     </div>
 
-    <nav class="fixed w-full top-16 md:top-0 z-40 bg-[#F9F7F3] py-4">
+    <nav class="fixed w-full top-16 md:top-0 z-40 bg-[#F9F7F3] py-2">
       <div class="mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center flex-wrap">
           <div>
             <a
-              href="#"
+              href="./blog.html"
               class="text-2xl bg-[#B4F461] px-4 py-2 border rounded-lg font-bold text-gray-800"
               >Blog</a
             >
@@ -44,29 +44,40 @@
               class="border border-dashed border-gray-400 h-6 w-6"
               alt=""
             />
-            <span class="pl-2">5500</span>
+            <span id="total-balance" class="pl-2">5500</span>
             <p class="pl-1">BDT</p>
           </div>
         </div>
       </div>
-    </nav>
 
-    <section>
-      <main class="pt-32">
-        <!-- Donate And History Button -->
-        <div class="flex justify-center items-center mb-4 mt-24">
-          <a
+      <!-- Donate And History Button -->
+      <div class="flex justify-center items-center mb-1 mt-24 bg-[#F0F8FF] bg-opacity-70">
+          <a id="donation-btn"
             href="#"
             class="text-2xl bg-[#B4F461] px-6 py-3 border rounded-lg font-bold text-gray-800 mx-2"
             >Donation</a
           >
-          <a
+          <a id="history-btn"
             href="#"
-            class="text-2xl bg-[#B4F461] px-6 py-3 border rounded-lg font-bold text-gray-800 mx-2"
+            class="text-2xl px-6 py-3 text-gray-500 border rounded-lg font-bold  mx-2"
             >History</a
           >
         </div>
+    </nav>
 
+><div class="flex flex-col w-full">
+ 
+  <div class="divider font-bold"></div>
+
+</div>
+
+    <section id="donation-part" class="">
+      <main class=" pt-72">
+<div class="flex flex-col w-full">
+ 
+  <div class="divider font-bold"></div>
+
+</div>
         <!-- card_1 -->
         <div class="hero">
           <div
@@ -78,10 +89,10 @@
             />
             <div class="flex flex-col w-full">
               <button
-                class="w-24 border rounded-md p-1 flex bg-[#1111110D] items-center mb-2"
+                class="w-36 border rounded-md p-1 flex bg-[#1111110D] items-center mb-2"
               >
                 <img src="assets/coin.png" class="h-6 w-6" alt="" />
-                <span class="pl-2 text-lg">0</span>
+                <span class="pl-2 text-lg">15000</span>
                 <p class="pl-1 text-lg">BDT</p>
               </button>
 
@@ -97,13 +108,13 @@
                 the lives of those in need.
               </p>
               <div>
-                <input
-                  type="text"
+                <input id="donate-noakhali" autocomplete="off"
+                  type="number"
                   placeholder="Write Donation Amount"
                   class="input bg-[#fff] input-bordered w-full my-4"
                 />
               </div>
-              <button
+              <button id="btn-noakhali"
                 class="text-lg bg-[#B4F461] px-4 py-2 border rounded-lg font-semibold text-gray-800 w-full"
               >
                 Donate Now
@@ -123,10 +134,10 @@
             />
             <div class="flex flex-col w-full">
               <button
-                class="w-24 border rounded-md p-1 flex bg-[#1111110D] items-center mb-2"
+                class="w-36 border rounded-md p-1 flex bg-[#1111110D] items-center mb-2"
               >
                 <img src="assets/coin.png" class="h-6 w-6" alt="" />
-                <span class="pl-2 text-lg">0</span>
+                <span class="pl-2 text-lg">12000</span>
                 <p class="pl-1 text-lg">BDT</p>
               </button>
 
@@ -138,7 +149,7 @@
               </p>
               <div>
                 <input
-                  type="text"
+                 type="number"
                   placeholder="Write Donation Amount"
                   class="input bg-[#fff] input-bordered w-full my-4"
                 />
@@ -162,10 +173,10 @@
             />
             <div class="flex flex-col w-full">
               <button
-                class="w-24 border rounded-md p-1 flex bg-[#1111110D] items-center mb-2"
+                class="w-36 border rounded-md p-1 flex bg-[#1111110D] items-center mb-2"
               >
                 <img src="assets/coin.png" class="h-6 w-6" alt="" />
-                <span class="pl-2 text-lg">0</span>
+                <span class="pl-2 text-lg">10000</span>
                 <p class="pl-1 text-lg">BDT</p>
               </button>
 
@@ -177,7 +188,7 @@
               </p>
               <div>
                 <input
-                  type="text"
+                   type="number"
                   placeholder="Write Donation Amount"
                   class="input bg-[#fff] input-bordered w-full my-4"
                 />
@@ -193,8 +204,27 @@
       </main>
     </section>
 
+    <div class="mt-64" id="history-part">
+        <div class="border border-gray-400 text-black p-4 mx-16 mt-6 rounded-md">
+        <p class="text-lg font-bold">100 Taka is Donated for flood at Noakhali,Bangladesh</p>
+        <p class="bg-white py-5 pl-6">Date:11-22-24</p>
+
+    </div>
+       <div class="border border-gray-400 text-black p-4 mx-16 mt-6 rounded-md">
+        <p class="text-lg font-bold">100 Taka is Donated for flood at Noakhali,Bangladesh</p>
+        <p class="bg-white py-5 pl-6">Date:11-22-24</p>
+
+    </div>
+    </div>
+
     <footer>
       <div class="bg-[#F9F7F3] h-36"></div>
     </footer>
+
+    <script src="js/utility.js"></script>
+    <script src="js/domManipulation.js"></script>
+    <script src="js/index.js"></script>
+    
   </body>
+  
 </html>
