@@ -51,7 +51,7 @@ noakhaliDonateButton.addEventListener("click", function () {
       <p class="text-lg font-bold">
         ${noakhaliInputValue} Taka is ${title}
         </p>
-        <p class="bg-white py-1 pl-2">Date: ${dateTime}</p>
+        <p class="bg-white py-1">Date: ${dateTime}</p>
 
 `
 
@@ -106,12 +106,12 @@ feniDonateButton.addEventListener("click", function () {
     const title = getTitle("feni-title"); 
 
     historyItem.className = "border border-gray-400 text-black p-4 mx-16 mt-6 rounded-md"; 
-    const dateTime = getCurrentDateTime();
+    const dateTime = getCurrentDateAndTime();
        historyItem.innerHTML = `
       <p class="text-lg font-bold">
         ${feniInputValue} Taka is ${title}
         </p>
-        <p class="bg-white py-5 pl-6">Last Donation on: ${dateTime}</p>
+        <p class="bg-white py-1">Date: ${dateTime}</p>
 
 `
 
@@ -170,13 +170,13 @@ quotaDonateButton.addEventListener("click", function () {
 
     historyItem.className = "border border-gray-400 text-black p-4 mx-16 mt-6 rounded-md"; 
 
-    const dateTime = getCurrentDateTime();
+    const dateTime = getCurrentDateAndTime();
 
        historyItem.innerHTML = `
       <p class="text-lg font-bold">
         ${quotaInputValue} Taka is ${title}
         </p>
-        <p class="bg-white py-5 pl-6">Last Donation on: ${dateTime}</p>
+        <p class="bg-white py-1">Date: ${dateTime}</p>
 
 `
 
