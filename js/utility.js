@@ -14,11 +14,18 @@ function getInputValue(id) {
 }
 
 
-   function getCurrentDateTime() {
-            const now = new Date();
-            const date = now.toLocaleDateString();
-            const time = now.toLocaleTimeString();
-            return `Date: ${date} | Time: ${time}`;
+   function getCurrentDateAndTime() {
+    const now = new Date();
+    const options = {
+        timeZone: 'Asia/Dhaka',
+       
+    };
+
+    const dateString = now.toLocaleString('en-US', options).replace(',', '');
+    const timeString = now.toTimeString().split(' ')[0];
+    const dayString = now.toDateString();
+    
+    return ` ${dayString} ${timeString} GMT+0600 (Bangladesh Standard Time)`;
 }
  document.addEventListener("DOMContentLoaded", function () {
     const navbar = document.querySelector('nav');

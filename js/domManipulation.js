@@ -46,12 +46,12 @@ noakhaliDonateButton.addEventListener("click", function () {
     
     const title = getTitle("noakhali-title"); 
     historyItem.className = "border border-gray-400 text-black p-4 mx-16 mt-6 rounded-md"; 
-    const dateTime = getCurrentDateTime();
+    const dateTime = getCurrentDateAndTime();
        historyItem.innerHTML = `
       <p class="text-lg font-bold">
         ${noakhaliInputValue} Taka is ${title}
         </p>
-        <p class="bg-white py-5 pl-6">Last Donation on: ${dateTime}</p>
+        <p class="bg-white py-3 pl-5">Date: ${dateTime}</p>
 
 `
 
