@@ -51,7 +51,7 @@ noakhaliDonateButton.addEventListener("click", function () {
       <p class="text-lg font-bold">
         ${noakhaliInputValue} Taka is ${title}
         </p>
-        <p class="bg-white py-3 pl-5">Date: ${dateTime}</p>
+        <p class="bg-white py-1 pl-2">Date: ${dateTime}</p>
 
 `
 
