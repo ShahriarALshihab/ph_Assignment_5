@@ -15,7 +15,10 @@ noakhaliDonateButton.addEventListener("click", function () {
     const noakhaliInputValue = getInputValue("donate-noakhali"); 
 
     if (isNaN(noakhaliInputValue) || noakhaliInputValue <= 0) {
-        return alert("Invalid input"); 
+        alert("Invalid input");
+        catchElement("donate-noakhali").value = "";
+        
+        return; 
     }
 
     if (noakhaliInputValue > totalBalance) {
@@ -74,7 +77,9 @@ feniDonateButton.addEventListener("click", function () {
     const feniInputValue = getInputValue("donate-feni"); 
 
     if (isNaN(feniInputValue) || feniInputValue <= 0) {
-        return alert("Invalid input"); 
+        alert("Invalid input"); 
+        catchElement("donate-feni").value = "";
+        return; 
     }
     if (feniInputValue > totalBalance) {
         alert("Insufficient Balance"); 
@@ -131,7 +136,10 @@ quotaDonateButton.addEventListener("click", function () {
     const quotaInputValue = getInputValue("donate-quota"); 
 
     if (isNaN(quotaInputValue) || quotaInputValue <= 0) {
-        return alert("Invalid input"); 
+         alert("Invalid input"); 
+        catchElement("donate-quota").value = "";
+
+        return; 
     }
     if (quotaInputValue > totalBalance) {
         alert("Insufficient Balance"); 
